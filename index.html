@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--js and css links-->
+    <script src="assets/js/sudoku.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!--favicon links-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <!--font awesome link-->
+    <title>Sudoku</title>
+</head>
+<header>
+    <h1>Sudoku</h1>
+    <div id="setup-game">
+        <div id="diff">
+            <h2>Choose Difficulty: </h2>
+            <button id="easy" aerial-label="easy" name="diff" value="easy">Easy</button>
+            <button id="medium" aerial-label="medium"name="diff" value="easy">Medium</button>
+            <button id="hard" aerial-label="hard" name="diff" value="easy">Hard</button>
+        </div>
+        <div id="time">
+            <h2>Choose Time: </h2>
+            <label><input id="time-1" aerial-label="five minutes" type="radio" name="time" value="five" checked>5 Mins</label>
+            <label><input id="time-2" aerial-label="ten minutes" type="radio" name="time" value="ten">10 Mins</label>
+            <label><input id="time-3" aerial-label="fifteen minutes" type="radio" name="time" value="fifteen">15 Mins</label>
+        </div>
+        <div id="theme">
+            <h2>Choose Theme: </h2>
+            <label><input id="theme-1" aerial-label="light theme" type="radio" name="time" value="light" checked>Light</label>
+            <label><input id="theme-2" aerial-label="dark theme" type="radio" name="time" value="dark">Dark</label>
+        </div>
+    </div>
+    <button id="start-button">Create New Game!</button>
+</header>
+<body>
+    <div id="stats">
+        <p id="timer">timer</p>
+        <p id="lives">lives</p>
+    </div>
+    <div id="game">
+        <div id="board"></div>
+        <div id="number-container" class="hidden">
+            <p id="one">1</p>
+            <p id="two">2</p>
+            <p id="three">3</p>
+            <p id="four">4</p>
+            <p id="five">5</p>
+            <p id="six">6</p>
+            <p id="seven">7</p>
+            <p id="eight">8</p>
+            <p id="nine">9</p>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>Made by Anthony Wilson</p>
+</footer>
+</html>
