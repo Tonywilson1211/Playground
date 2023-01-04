@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--js and css links-->
-    <script src="assets/js/sudoku.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
     <!--favicon links-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/android-chrome-512x512.png">
@@ -20,23 +20,30 @@
     <div id="setup-game">
         <div id="diff">
             <h2>Choose Difficulty: </h2>
-            <button id="easy" aerial-label="easy" name="diff" value="easy">Easy</button>
-            <button id="medium" aerial-label="medium"name="diff" value="easy">Medium</button>
-            <button id="hard" aerial-label="hard" name="diff" value="easy">Hard</button>
+            <button id="easy" aria-label="easy" name="diff" value="easy" checked>Easy</button>
+            <button id="medium" aria-label="medium"name="diff" value="medium">Medium</button>
+            <button id="hard" aria-label="hard" name="diff" value="hard">Hard</button>
         </div>
         <div id="time">
             <h2>Choose Time: </h2>
-            <label><input id="time-1" aerial-label="five minutes" type="radio" name="time" value="five" checked>5 Mins</label>
-            <label><input id="time-2" aerial-label="ten minutes" type="radio" name="time" value="ten">10 Mins</label>
-            <label><input id="time-3" aerial-label="fifteen minutes" type="radio" name="time" value="fifteen">15 Mins</label>
+            <label><input id="time-1" aria-label="five minutes" type="radio" name="time" value="five" checked>5 Mins</label>
+            <label><input id="time-2" aria-label="ten minutes" type="radio" name="time" value="ten">10 Mins</label>
+            <label><input id="time-3" aria-label="fifteen minutes" type="radio" name="time" value="fifteen">15 Mins</label>
+            <label><input id="time-4" aria-label="unlimited" type="radio" name="time" value="unlimited">Unlimited</label>
         </div>
         <div id="theme">
             <h2>Choose Theme: </h2>
-            <label><input id="theme-1" aerial-label="light theme" type="radio" name="time" value="light" checked>Light</label>
-            <label><input id="theme-2" aerial-label="dark theme" type="radio" name="time" value="dark">Dark</label>
+            <label><input id="theme-1" aria-label="light theme" type="radio" name="theme" value="light" checked>Light</label>
+            <label><input id="theme-2" aria-label="dark theme" type="radio" name="theme" value="dark">Dark</label>
+        </div>
+        <div id="auto-solve">
+            <button aria-label="auto solve">Auto Solve</button>
         </div>
     </div>
-    <button id="start-button">Create New Game!</button>
+    <div id="start-button">
+        <button aria-label="start new game">Start New Game!</button>
+    </div>
+    
 </header>
 <body>
     <div id="stats">
